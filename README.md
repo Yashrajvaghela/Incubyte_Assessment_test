@@ -23,3 +23,14 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 🟢 Delete Sweet - Passing Test  
 ![Delete Pass](screenshots/DeleteSweetPass.png)
+
+
+3.VIEW ALL SWEETS
+
+ 🔴Failing Test
+
+![ViewFail](screenshots/ViewSweetsFail.png)
+
+ 🟢 Passing Test
+
+![ViewPass](screenshots/ViewSweetsPass.png)

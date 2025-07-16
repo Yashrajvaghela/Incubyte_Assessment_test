@@ -38,6 +38,7 @@ test("should return all sweets in the shop", () => {
   const allSweets = shop.getAllSweets();
 
   expect(allSweets).toEqual([
-   
+    { id: 1, name: "Ladoo", category: "Desi", price: 10, quantity: 50 },
+    { id: 2, name: "Barfi", category: "Milk", price: 20, quantity: 30 },
   ]);
 });

@@ -29,9 +29,13 @@ This is a simple project made using Test-Driven Development (TDD). It helps to m
 
 🧱 Project Structure
 
-<pre> SweetShopProject/ ├── src/ │ └── sweetshop.js # Logic for sweet shop ├── tests/ │ └── sweetshop.test.js # All test cases (TDD) ├── screenshots/ # Pass/fail test result images │ ├── AddFail.png │ ├── AddPass.png │ └── ... ├── package.json # Project metadata ├── package-lock.json └── README.md # Project description and guide </pre>
-## Screenshots
-1.ADD SWEETS
+- `src/sweetshop.js` – Contains the main logic
+- `tests/sweetshop.test.js` – Contains all test cases
+- `screenshots/` – Stores test result images (pass/fail)
+- `README.md` – This file
+- `package.json` – Project setup file
+
+![Project Structure](./screenshots/project-structure.png)
 
 ### 🔴 Failing Test
 ![Failing Test](screenshots/AddSweetFail.png)

@@ -42,3 +42,16 @@ test("should return all sweets in the shop", () => {
     { id: 2, name: "Barfi", category: "Milk", price: 20, quantity: 30 },
   ]);
 });
+
+//Search By Name
+test('should return sweets that match search criteria by name', () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 1, name: "Ladoo", category: "Traditional", price: 20 });
+  shop.addSweet({ id: 2, name: "Barfi", category: "Milk", price: 40 });
+
+  const result = shop.searchByNameSweets({ name: "Barfi" });
+
+  expect(result).toEqual([
+    { id: 2, name: "Barfi", category: "Milk", price: 40 }
+  ]);
+});

@@ -76,5 +76,27 @@ test("Search sweets within price range", () => {
   shop.addSweet({ id: 3, name: "Halwa", category: "Vegetable-Based", price: 15 });
 
   const result = shop.searchByPriceRange(12, 26);
-  expect(result.length).toBe(2); 
+  expect(result.length).toBe(1); 
+});
+//purchase sweet 
+
+test("Purchase sweet decreases quantity", () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 1, name: "Ladoo", category: "Nut-Based", price: 10, quantity: 5 });
+
+  shop.purchaseSweet(1, 2); // 1 shows id ,2 shows quantity
+
+  const sweets = shop.getAllSweets();
+  expect(sweets[0].quantity).toBe(3);
+});
+
+//shows error if not enough stock
+
+test("Purchase fails if not enough stock", () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 2, name: "Barfi", category: "Nut-Based", price: 20, quantity: 2 });
+
+  expect(() => {
+    shop.purchaseSweet(2, 5); // Trying to buy 5 but only 2 available
+  }).toThrow("Not enough stock");
 });

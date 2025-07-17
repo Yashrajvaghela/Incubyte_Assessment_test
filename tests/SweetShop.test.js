@@ -100,3 +100,15 @@ test("Purchase fails if not enough stock", () => {
     shop.purchaseSweet(2, 5); // Trying to buy 5 but only 2 available
   }).toThrow("Not enough stock");
 });
+
+//Restock sweets 
+
+test("Restock sweet increases quantity", () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 1, name: "Ladoo", category: "Nut-Based", price: 10, quantity: 3 });
+
+  shop.restockSweet(1, 5); // Add 5 more
+
+  const sweets = shop.getAllSweets();
+  expect(sweets[0].quantity).toBe(8); 
+});

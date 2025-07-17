@@ -37,10 +37,29 @@ This is a simple project made using Test-Driven Development (TDD). It helps to m
 
 ![Project Structure](./screenshots/project-structure.png)
 
-### 🔴 Failing Test
+## 🧪 Testing
+
+This project uses **Jest** for testing the features like Add, Delete, View, Search, Purchase, and Restock.
+
+### How to run tests:
+
+```bash
+npm test
+
+## 🕓 Commit History
+
+Here is the commit history showing step-by-step development:
+
+![Commit History](./screenshots/commit-history.png)
+
+## SCREENSHOTS
+
+1.ADD SWEET
+
+ 🔴 Failing Test
 ![Failing Test](screenshots/AddSweetFail.png)
 
-### 🟢 Passing Test
+ 🟢 Passing Test
 ![Passing Test](screenshots/AddSweetPass.png)
 
 2.DELETE SWEETS

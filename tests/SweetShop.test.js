@@ -66,3 +66,15 @@ test("Search sweets by category", () => {
   const result = shop.searchByCategory("Nut-Based");
   expect(result.length).toBe(1);
 });
+
+//Search By Price Range
+ 
+test("Search sweets within price range", () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 1, name: "Ladoo", category: "Nut-Based", price: 10 });
+
+  shop.addSweet({ id: 3, name: "Halwa", category: "Vegetable-Based", price: 15 });
+
+  const result = shop.searchByPriceRange(12, 26);
+  expect(result.length).toBe(2); 
+});

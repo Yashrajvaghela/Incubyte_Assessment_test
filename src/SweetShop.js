@@ -1,22 +1,33 @@
 class SweetShop {
-//constructor
+  //constructor
   constructor() {
     this.sweets = [];
   }
 
-  //add sweet
-  addSweet(sweet) {
+  //add sweets
 
-    const exists = this.sweets.some(item => item.id === sweet.id);
+  addSweet(sweet) {
+    const exists = this.sweets.some((item) => item.id == sweet.id);
     if (exists) {
       throw new Error("Sweet with this ID already exists");
     }
     this.sweets.push(sweet);
   }
   // get all sweets
-  getAllSweets() {
+getAllSweets() {
     return this.sweets;
   }
+  //delete sweets
+
+    deleteSweet(id) {
+    const index = this.sweets.findIndex(s => s.id === id);
+    if (index == -1) throw new Error("Sweet not found");
+    this.sweets.splice(index, 1);
+  }
+  searchByName(name) {
+  return this.sweets.filter(sweet =>  sweet.name &&sweet.name.toLowerCase() === name.toLowerCase());
+}
+
 }
 
 module.exports = SweetShop;

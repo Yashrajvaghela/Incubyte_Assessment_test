@@ -40,6 +40,18 @@ searchByCategory(category) {
 searchByPriceRange(min, max) {
   return this.sweets.filter(s => s.price >= min && s.price <= max);
 }
+//PurchaseSweet
+
+purchaseSweet(id, qty) {
+  const sweet = this.sweets.find(s => s.id === id);
+  if (!sweet) {
+    throw new Error("Sweet not found");
+  }
+  if (sweet.quantity < qty) {
+    throw new Error("Not enough stock");
+  }
+  sweet.quantity -= qty;
+}
 }
 
 module.exports = SweetShop;

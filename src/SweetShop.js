@@ -35,6 +35,11 @@ getAllSweets() {
 searchByCategory(category) {
   return this.sweets.filter(s => s.category.toLowerCase() === category.toLowerCase());
 }
+
+//search by pricerange
+searchByPriceRange(min, max) {
+  return this.sweets.filter(s => s.price >= min && s.price <= max);
+}
 }
 
 module.exports = SweetShop;

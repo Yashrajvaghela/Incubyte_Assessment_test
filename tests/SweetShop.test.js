@@ -55,3 +55,14 @@ test('should return sweets that match search by name', () => {
     { id: 2, name: "Barfi", category: "Milk", price: 40 }
   ]);
 });
+
+//Search By Category
+
+test("Search sweets by category", () => {
+  const shop = new SweetShop();
+  shop.addSweet({ id: 1, name: "Kaju Katli", category: "Nut-Based", price: 10 });
+  shop.addSweet({ id: 2, name: "GajarHalwa", category: "Vegetable-Based", price: 15 });
+
+  const result = shop.searchByCategory("Nut-Based");
+  expect(result.length).toBe(1);
+});

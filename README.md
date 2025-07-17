@@ -13,7 +13,9 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 - Search By Name
 
--Search By Category
+- Search By Category
+
+- Search By PriceRange
 
 ## Screenshots
 1.ADD SWEETS
@@ -62,3 +64,13 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
  🟢 Passing Test
 
 ![ViewPass](screenshots/SearchByCategoryPass.png)
+
+5.SEARCH BY PriceRange
+
+🔴Failing Test
+
+![ViewFail](screenshots/SearchByPriceRangeFail.png)
+
+ 🟢 Passing Test
+
+![ViewPass](screenshots/SearchByPriceRangePass.png)

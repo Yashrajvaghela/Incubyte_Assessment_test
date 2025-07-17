@@ -24,10 +24,17 @@ getAllSweets() {
     if (index == -1) throw new Error("Sweet not found");
     this.sweets.splice(index, 1);
   }
+   
+  //search by name
+
   searchByName(name) {
   return this.sweets.filter(sweet =>  sweet.name &&sweet.name.toLowerCase() === name.toLowerCase());
 }
+//search by category
 
+searchByCategory(category) {
+  return this.sweets.filter(s => s.category.toLowerCase() === category.toLowerCase());
+}
 }
 
 module.exports = SweetShop;

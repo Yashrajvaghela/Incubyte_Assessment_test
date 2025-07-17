@@ -19,6 +19,11 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 - Purchase sweets (inventory updates)
 
+-> 🔁 Restock Sweet
+
+- Add more quantity to a sweet using its ID.
+- If sweet not found, it throws an error.
+
 ## Screenshots
 1.ADD SWEETS
 
@@ -77,7 +82,7 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 ![ViewPass](screenshots/SearchByPriceRangePass.png)
 
-6.🛒 Purchase Sweet
+6.🛒 PURCHASE SWEET
 
 🔴Failing Test
 
@@ -86,3 +91,27 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
  🟢 Passing Test
 
 ![ViewPass](screenshots/PurchaseSweetPass.png)
+
+
+6.🛒 PURCHASE SWEET
+
+🔴Failing Test
+
+![ViewFail](screenshots/PurchaseSweetFail.png)
+
+ 🟢 Passing Test
+
+![ViewPass](screenshots/PurchaseSweetPass.png)
+
+7.RESTOCK SWEET
+
+
+🔴Failing Test
+
+![ViewFail](screenshots/RestockSweetFail.png)
+
+ 🟢 Passing Test
+
+![ViewPass](screenshots/RestockSweetPass.png)
+
+

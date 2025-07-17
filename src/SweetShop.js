@@ -52,6 +52,16 @@ purchaseSweet(id, qty) {
   }
   sweet.quantity -= qty;
 }
+
+//restock sweet
+
+restockSweet(id, qty) {
+  const sweet = this.sweets.find(s => s.id === id);
+  if (!sweet) {
+    throw new Error("Sweet not found");
+  }
+  sweet.quantity += qty;
+}
 }
 
 module.exports = SweetShop;

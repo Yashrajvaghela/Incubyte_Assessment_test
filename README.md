@@ -1,7 +1,9 @@
 # Incubyte_Assessment_test
 # Sweet Shop Management System
 
-This project helps to manage sweets in a shop. Right now, it has the "Add Sweet" feature using TDD.
+This is a simple project made using Test-Driven Development (TDD). It helps to manage a sweet shop. You can add sweets, delete them, view all sweets, and search them by name, category, or price. You can also restock sweets and manage quantity.
+
+
 
 ## ✅ Features Implemented
 
@@ -24,6 +26,10 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 - Add more quantity to a sweet using its ID.
 - If sweet not found, it throws an error.
 
+
+🧱 Project Structure
+
+<pre> SweetShopProject/ ├── src/ │ └── sweetshop.js # Logic for sweet shop ├── tests/ │ └── sweetshop.test.js # All test cases (TDD) ├── screenshots/ # Pass/fail test result images │ ├── AddFail.png │ ├── AddPass.png │ └── ... ├── package.json # Project metadata ├── package-lock.json └── README.md # Project description and guide </pre>
 ## Screenshots
 1.ADD SWEETS
 

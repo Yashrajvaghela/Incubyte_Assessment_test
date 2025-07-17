@@ -11,7 +11,9 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 - View Sweets
 
--Search By Name
+- Search By Name
+
+-Search By Category
 
 ## Screenshots
 1.ADD SWEETS
@@ -50,3 +52,13 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
  🟢 Passing Test
 
 ![ViewPass](screenshots/SearchByNamePass.png)
+
+5.SEARCH BY Category
+
+🔴Failing Test
+
+![ViewFail](screenshots/SearchByCategoryFail.png)
+
+ 🟢 Passing Test
+
+![ViewPass](screenshots/SearchByCategoryPass.png)

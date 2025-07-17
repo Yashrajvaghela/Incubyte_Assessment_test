@@ -77,7 +77,7 @@ This project helps to manage sweets in a shop. Right now, it has the "Add Sweet"
 
 ![ViewPass](screenshots/SearchByPriceRangePass.png)
 
-6.SEARCH BY PriceRange
+6.🛒 Purchase Sweet
 
 🔴Failing Test
 
